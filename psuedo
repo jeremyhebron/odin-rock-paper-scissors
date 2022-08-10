@@ -1,0 +1,8 @@
+Create a game of rock paper scissors played against a computer (played in console)
+    Play rounds 5 of rock paper scissors
+        Each Round will get input from player by way of prompt
+            Function to validate input from player 
+                Statement to make sure player cant break game by closing prompt
+        Each Round will get a random choice from computer
+        Each Round will compare input and choice and determine winner
+        Each Round is logged and winner is logged keeping a score
