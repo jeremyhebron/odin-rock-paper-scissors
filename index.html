@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-</head>
-<body>
-   <h1>Rock Paper Scissors</h1>
-   <button onclick="game()">Start Game</button>
-</body>
-<script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="mainbody">
+      <div class="playersection">
+        <h1>***************************</h1>
+        <p class="name">SINNER BOY</p>
+        <h2 class="playerchoice"></h2>
+        <h1 class="playerscore">Score: 0</h1>
+        <img src="images/cowboy.jpg" alt="Cowboy Emoji" class="image" />
+        <h1>***************************</h1>
+      </div>
+      <div class="middlearena">
+        <p class="middletext">Play for your salvation</p>
+        <h2 class="ties">Ties: 0</h2>
+        <div class="winnerDiv">
+          <h1 class="winner"></h1>
+          <h1>*************************************</h1>
+          <button class="reset" onclick="resetGame()">Play Again?</button>
+        </div>
+        <div class="choices">
+          <img src="./images/rock.png" alt="Rock" class="pImg" id="rock" />
+          <img src="./images/paper.png" alt="Paper" class="pImg" id="paper" />
+          <img
+            src="./images/scissors.png"
+            alt="Scissors"
+            class="pImg"
+            id="scissors"
+          />
+        </div>
+      </div>
+      <div class="computersection">
+        <h1>***************************</h1>
+        <p class="name">GodHead</p>
+        <h2 class="computerchoice"></h2>
+        <h1 class="computerscore">Score: 0</h1>
+        <img src="images/god.png" alt="God" class="image" />
+        <h1>***************************</h1>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
 </html>
