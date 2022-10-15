@@ -4,11 +4,15 @@
 }
 
 body {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   background: black;
   font-family: monospace;
   color: yellow;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 header {
@@ -17,6 +21,8 @@ header {
   justify-content: center;
   align-items: center;
   font-family: ledlight;
+  margin-top:50px;
+  font-size: larger;
 }
 
 .mainbody {
@@ -116,3 +122,30 @@ header {
   align-items: center;
   text-align: center;
 }
+
+
+@media (min-width: 1000px)  {
+
+  .playersection,
+.computersection{
+  width: 300px;
+}
+  .mainbody{
+    width: 100px;
+    height: 100vh;
+  }
+  .middlearena{
+    width: 500px;
+  }
+  .playersection h1{
+    font-size: x-large;
+  }
+  .computersection h1{
+    font-size: x-large;
+  }
+}
+
+
+
+
+  
